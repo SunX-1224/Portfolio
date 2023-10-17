@@ -8,6 +8,8 @@ import {
     reactjs,
     tailwind,
     nodejs,
+    unity,
+    cpp,
     mongodb,
     git,
     meta,
@@ -82,6 +84,14 @@ import {
     {
       name: "Three JS",
       icon: threejs,
+    },
+    {
+      name : "Unity",
+      icon : unity
+    },
+    {
+      name : "C++",
+      icon : cpp
     },
     {
       name: "git",
