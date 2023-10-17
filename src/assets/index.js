@@ -25,8 +25,9 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import physx2d from "./physx2d.png";
+import portfolio from "./portfolio.png"
+
 
 export {
   logo,
@@ -53,6 +54,6 @@ export {
   starbucks,
   tesla,
   carrent,
-  jobit,
-  tripguide,
+  portfolio,
+  physx2d
 };

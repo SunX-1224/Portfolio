@@ -17,9 +17,9 @@ import {
     tesla,
     shopify,
     carrent,
-    jobit,
-    tripguide,
     threejs,
+    physx2d,
+    portfolio
   } from "../assets";
   
   export const navLinks = [
@@ -204,46 +204,46 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Window2Me",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "This is the site you are currently looking at right now. This showcases my works interactively and interestingly in some way.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "threejs",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "javascript",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: portfolio,
+      source_code_link: "https://github.com/SunX-1224/Portfolio",
     },
     {
-      name: "Trip Guide",
+      name: "Physx-2D",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A 2D physics engine with different components and utilities suitable for simulations and making desktop games.",
       tags: [
         {
-          name: "nextjs",
+          name: "c++",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "opengl",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "glfw",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: physx2d,
+      source_code_link: "https://github.com/SunX-1224/Physx-2D",
     },
   ];
   
