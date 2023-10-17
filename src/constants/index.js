@@ -1,20 +1,15 @@
 import {
     mobile,
-    backend,
-    creator,
+    game,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
     meta,
     starbucks,
     tesla,
@@ -42,20 +37,16 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Full-Stack Web Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Mobile & Desktop Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
+      title: "Game Developer",
+      icon: game,
     },
   ];
   
@@ -73,16 +64,8 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
     },
     {
       name: "Tailwind CSS",
@@ -103,15 +86,7 @@ import {
     {
       name: "git",
       icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    }
   ];
   
   const experiences = [

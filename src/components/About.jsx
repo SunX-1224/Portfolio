@@ -42,9 +42,9 @@ const About = () => {
       <motion.p variants={fadeIn("", "", 0.1, 1)}
       className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
         I'm a skilled javascript developer with experience in frameworks like React, Node.js and Three.js. 
-        I'm a quick learner and an excellent peer to look assistance in short or long projects. Not only these, 
+        I'm a quick learner and an excellent peer to look for assistance in short or long-term projects. Not only these, 
         I also come with a great insight on Game-development and Game-Engine-Development along with some 3D-Modelling 
-        skills. So, look for me around if you have some projects for me.
+        skills. Lets make something great together !!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
