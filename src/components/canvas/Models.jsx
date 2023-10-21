@@ -10,7 +10,7 @@ const Model = ({isMobile}) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={6} position={[0,0,-4]} color="#AAAAAA"/>
+      <hemisphereLight intensity={3} position={[0,0,-4]} color="#AAAAAA"/>
       <primitive object={model.scene} scale={isMobile?1.2:1.5} position={isMobile?[0, -1, 0 ]:[0, -1.5, 0]} rotation={[0.0, 1.57, 0.0]}/>
     </mesh>
   )

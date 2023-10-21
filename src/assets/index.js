@@ -19,12 +19,8 @@ import threejs from "./tech/threejs.svg";
 import cpp from "./tech/cpp.png"
 import unity from "./tech/unity.png"
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import margintop from './company/margintop.jpeg'
 
-import carrent from "./carrent.png";
 import physx2d from "./physx2d.png";
 import portfolio from "./portfolio.png"
 
@@ -49,11 +45,7 @@ export {
   reactjs,
   tailwind,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
+  margintop,
   portfolio,
   physx2d
 };
