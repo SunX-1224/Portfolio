@@ -15,15 +15,15 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v1
         with:
           node-version: 16
 
-      - name: Install dependencies and build
-        uses: vitejs/vite@v0.0.7
-        with:
-          cmd: install
-      - run: npm run build
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Build project
+        run: npm run build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
