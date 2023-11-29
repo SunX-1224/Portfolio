@@ -19,10 +19,11 @@ import threejs from "./tech/threejs.svg";
 import cpp from "./tech/cpp.png"
 import unity from "./tech/unity.png"
 
-import margintop from './company/margintop.jpeg'
+import margintop from './company/margintop.svg'
 
 import physx2d from "./physx2d.png";
 import portfolio from "./portfolio.png"
+import endless from "./EndLess.png"
 
 
 export {
@@ -47,5 +48,6 @@ export {
   threejs,
   margintop,
   portfolio,
-  physx2d
+  physx2d,
+  endless
 };

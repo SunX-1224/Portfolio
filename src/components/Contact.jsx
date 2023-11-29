@@ -1,4 +1,4 @@
-import {useState, useRef} from 'react'
+import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 
@@ -11,33 +11,34 @@ const Contact = () => {
 
   const formref = useRef();
   const [form, setForm] = useState({
-    name : '',
-    email:'',
-    message:''
+    name: '',
+    email: '',
+    message: ''
   });
-  const [loading, setLoading]  = useState(false)
+
+  const [loading, setLoading] = useState(false)
   const handleChange = (e) => {
-    const {name, value} = e.target;
-    setForm({...form, [name]:value})
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value })
   }
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send('service_uevkdiq', 'template_wybkgos', 
-    {
-        from_name : form.name,
-        to_name : "Sunil Sapkota",
-        from_email : form.email,
-        to_email : "sunx.sapk@gmail.com",
-        message : form.message
+    emailjs.send('service_uevkdiq', 'template_wybkgos',
+      {
+        from_name: form.name,
+        to_name: "Sunil Sapkota",
+        from_email: form.email,
+        to_email: "sunx.sapk@gmail.com",
+        message: form.message
       },
       'eL_bSzeBmyjJtLlXS'
-    ).then(()=>{
+    ).then(() => {
       setLoading(false);
       alert('Thank you ! I will get back to you as soon as possible.');
-      setForm({name:'', email:'', message:''})
-    }, (err)=>{
+      setForm({ name: '', email: '', message: '' })
+    }, (err) => {
       setLoading(false);
       console.log(err);
       alert('Something went wrong !');
@@ -51,28 +52,28 @@ const Contact = () => {
         <h3 className={`${styles.sectionHeadText}`}>Contact.</h3>
 
         <form
-          ref = {formref}
+          ref={formref}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col'>
 
-            <label className='flex flex-col'><span className='text-white font-medium mb-4'>Your Name</span>
-              <input type='text' name='name' value={form.name} onChange={handleChange} placeholder="What's your name?" 
+          <label className='flex flex-col'><span className='text-white font-medium mb-4'>Your Name</span>
+            <input type='text' name='name' value={form.name} onChange={handleChange} placeholder="What's your name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
-            </label>
+          </label>
 
-            <label className='flex flex-col'><span className='text-white font-medium mb-4'>Your Email</span>
-              <input type='text' name='email' value={form.email} onChange={handleChange} placeholder="What's your email?" 
+          <label className='flex flex-col'><span className='text-white font-medium mb-4'>Your Email</span>
+            <input type='text' name='email' value={form.email} onChange={handleChange} placeholder="What's your email?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
-            </label>
+          </label>
 
-            <label className='flex flex-col'><span className='text-white font-medium mb-4'>Your Message</span>
-              <textarea  rows={5} name='message' value={form.message} onChange={handleChange} placeholder="Whatdo you want to say?" 
+          <label className='flex flex-col'><span className='text-white font-medium mb-4'>Your Message</span>
+            <textarea rows={5} name='message' value={form.message} onChange={handleChange} placeholder="Whatdo you want to say?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
-            </label>
+          </label>
 
-            <button type="submit" className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl mt-4'> {loading? 'Sending...':'Send'} </button>
+          <button type="submit" className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl mt-4'> {loading ? 'Sending...' : 'Send'} </button>
 
-          </form>
+        </form>
       </motion.div>
 
       <motion.div
