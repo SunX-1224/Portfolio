@@ -5,13 +5,14 @@ import { styles } from '../style';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
 
+// TODO : publish game and link developer account
 const Navbar = () => {
 
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
   return (
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
-      <div className='w-full flex items-center justify-between max-w-7xl mx-0'>
+      <div className='w-full flex items-center justify-start gap-6 max-w-7xl mx-0'>
         <Link
           to='/'
           className='flex items-center gap-3'
@@ -21,20 +22,22 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className='w-16 h-16 object-contain' />
-          <p className='text-white text-xl font-bold cursor-pointer flex'>Sunil Sapkota&nbsp;<span className='sm:block hidden'> | FourSeven Games</span></p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((link) => (
-            <li
-              key={link.id}
-              className={`${active === link.title ? "text-white" : "text-secondary"} text-[18px] cursor-pointer font-medium hover:text-white`}
-              onClick={() => setActive(link.title)}
-            >
-              <a href={`#${link.id}`}>{link.title}</a>
-            </li>
-          ))}
-        </ul>
+        <div className='flex flex-grow justify-between'>
+          <p className='text-white text-xl font-bold cursor-pointer flex'>Sunil Sapkota&nbsp;<a href='https://play.google.com/store/' className='sm:block hidden'> | FourSeven Games &#8599; </a></p>
+          <ul className='list-none hidden sm:flex flex-row gap-10'>
+            {navLinks.map((link) => (
+              <li
+                key={link.id}
+                className={`${active === link.title ? "text-white" : "text-secondary"} text-[18px] cursor-pointer font-medium hover:text-white`}
+                onClick={() => setActive(link.title)}
+              >
+                <a href={`#${link.id}`}>{link.title}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img

@@ -126,33 +126,6 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but XXXX proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like XXXX does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After XXXX optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
     name: "EndLess",
@@ -168,11 +141,14 @@ const projects = [
       },
     ],
     image: endless,
-    source_code_link: "https://github.com/SunX-1224/Endless",
-    view_link: 'https://play.google.com/store/apps/details?id=com.FourSevenGames.Endless&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+    source_code_link: "https://github.com/therealsunx/Endless",
+    view: {
+      link: 'https://play.google.com/store/apps/details?id=com.FourSevenGames.Endless&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1',
+      icon: 'https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
+    }
   },
   {
-    name: "Window2Me",
+    name: "Window-to-Me",
     description:
       "This is the site you are currently looking at right now. This showcases my works interactively and interestingly in some way.",
     tags: [
@@ -190,7 +166,11 @@ const projects = [
       },
     ],
     image: portfolio,
-    source_code_link: "https://github.com/SunX-1224/Portfolio",
+    source_code_link: "https://github.com/therealsunx/Portfolio",
+    view :{
+      link : "www.therealsunx.github.io",
+      icon : logo
+    }
   },
   {
     name: "Physx-2D",
@@ -211,8 +191,8 @@ const projects = [
       },
     ],
     image: physx2d,
-    source_code_link: "https://github.com/SunX-1224/Physx-2D",
+    source_code_link: "https://github.com/therealsunx/Physx-2D",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
