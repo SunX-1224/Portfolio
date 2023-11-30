@@ -1,5 +1,5 @@
-import logo from "./logo.svg";
 import game from "./game.png";
+import logo from "./logo.svg";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
