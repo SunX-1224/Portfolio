@@ -25,7 +25,7 @@ const Navbar = () => {
         </Link>
 
         <div className='flex flex-grow justify-between'>
-          <p className='text-white text-xl font-bold cursor-pointer flex'>Sunil Sapkota&nbsp;<a href='https://play.google.com/store/' className='sm:block hidden'> | FourSeven Games &#8599; </a></p>
+          <p className='text-white text-xl font-bold cursor-pointer flex'>Sunil Sapkota&nbsp;<a href='https://play.google.com/store/apps/dev?id=8683062841152944143' className='sm:block hidden'> | FourSeven Games &#8599; </a></p>
           <ul className='list-none hidden sm:flex flex-row gap-10'>
             {navLinks.map((link) => (
               <li

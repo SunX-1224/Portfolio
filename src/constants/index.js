@@ -37,16 +37,16 @@ export const navLinks = [
 
 const services = [
   {
+    title: "Game Developer",
+    icon: game,
+  },
+  {
     title: "Full-Stack Web Developer",
     icon: web,
   },
   {
     title: "Mobile & Desktop Developer",
     icon: mobile,
-  },
-  {
-    title: "Game Developer",
-    icon: game,
   },
 ];
 
@@ -166,9 +166,9 @@ const projects = [
       },
     ],
     image: portfolio,
-    source_code_link: "https://github.com/therealsunx/Portfolio",
+    source_code_link: "https://github.com/therealsunx/therealsunx.github.io",
     view :{
-      link : "www.therealsunx.github.io",
+      link : "https://www.therealsunx.github.io",
       icon : logo
     }
   },
