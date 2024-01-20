@@ -24,6 +24,7 @@ import margintop from './company/margintop.svg'
 import physx2d from "./physx2d.png";
 import portfolio from "./portfolio.png"
 import endless from "./EndLess.png"
+import eos from "./EOS.png"
 
 
 export {
@@ -49,5 +50,6 @@ export {
   margintop,
   portfolio,
   physx2d,
-  endless
+  endless,
+  eos
 };

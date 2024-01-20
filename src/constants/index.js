@@ -17,6 +17,7 @@ import {
   physx2d,
   portfolio,
   endless,
+  eos,
   logo
 } from "../assets";
 
@@ -128,6 +129,26 @@ const experiences = [
 
 const projects = [
   {
+    name: "Edge Of Space",
+    description: "Survive against the dreads and dash through them.",
+    tags: [
+      {
+        name: "unity",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "c-sharp",
+        color: "green-text-gradient",
+      },
+    ],
+    image: eos,
+    source_code_link: "https://github.com/therealsunx/EdgeOfSpace",
+    view: {
+      link: 'https://play.google.com/store/apps/details?id=com.FourSevenGames.EdgeOfSpace&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1',
+      icon: 'https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
+    }
+  },
+  {
     name: "EndLess",
     description: "An Endless flight game with procedurally generated dynamic levels with thrilling gameplay.",
     tags: [
@@ -167,9 +188,9 @@ const projects = [
     ],
     image: portfolio,
     source_code_link: "https://github.com/therealsunx/therealsunx.github.io",
-    view :{
-      link : "https://www.therealsunx.github.io",
-      icon : logo
+    view: {
+      link: "https://www.therealsunx.github.io",
+      icon: logo
     }
   },
   {

@@ -13,16 +13,9 @@ const Navbar = () => {
   return (
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
       <div className='w-full flex items-center justify-start gap-6 max-w-7xl mx-0'>
-        <Link
-          to='/'
-          className='flex items-center gap-3'
-          onClick={() => {
-            setActive('');
-            window.scrollTo(0, 0);
-          }}
-        >
+        <a href='https://play.google.com/store/apps/dev?id=8683062841152944143'>
           <img src={logo} alt="logo" className='w-16 h-16 object-contain' />
-        </Link>
+        </a>
 
         <div className='flex flex-grow justify-between'>
           <p className='text-white text-xl font-bold cursor-pointer flex'>Sunil Sapkota&nbsp;<a href='https://play.google.com/store/apps/dev?id=8683062841152944143' className='sm:block hidden'> | FourSeven Games &#8599; </a></p>
