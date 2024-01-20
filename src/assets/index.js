@@ -20,6 +20,7 @@ import cpp from "./tech/cpp.png"
 import unity from "./tech/unity.png"
 
 import margintop from './company/margintop.svg'
+import prodigy from "./company/prodigy.jpeg"
 
 import physx2d from "./physx2d.png";
 import portfolio from "./portfolio.png"
@@ -48,6 +49,7 @@ export {
   tailwind,
   threejs,
   margintop,
+  prodigy,
   portfolio,
   physx2d,
   endless,

@@ -18,6 +18,7 @@ import {
   portfolio,
   endless,
   eos,
+  prodigy,
   logo
 } from "../assets";
 
@@ -99,6 +100,7 @@ const technologies = [
 ];
 
 const experiences = [
+
   {
     title: "Full stack Developer",
     company_name: "Margin-Top Solutions",
@@ -123,6 +125,17 @@ const experiences = [
       "Developing 2D and 3D games of different genre.",
       "Building games for Android, IOS and Desktop devices.",
       "Launching the games on Google PlayStore.",
+    ],
+  }, {
+    title: "FrontEnd Developer Intern",
+    company_name: "Prodigy InfoTech",
+    icon: prodigy,
+    iconBg: "#FFF",
+    date: "Jan 2024 - Feb 2024",
+    points: [
+      "Developing Web applications and Games using HTML, CSS and JS",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Using APIs to create utility applications"
     ],
   },
 ];
